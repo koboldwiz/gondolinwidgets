@@ -5,7 +5,7 @@
 		(*xdraw (make-xdraw))) 
 
 	(define (draw-button dpy win gc x y w h)
-		((*xdraw 'fill) dpy win gc x y w h)))
+		((*xdraw 'fill-rectangle) dpy win gc x y w h)))
 
 	(define (draw-widget)
 		(draw-button))
